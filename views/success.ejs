@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Thank You!</title>
+  </head>
+  <body>
+    <h1>Thanks for your purchase!</h1>
+    <p>Order reference: <%= sale.order_id %></p>
+    <p>Your license key is below:</p>
+    <pre><code><%= license.attributes.key %></code></pre>
+    <a href="<%= downloadLink %>">Download Now</a>
+  </body>
+</html>
