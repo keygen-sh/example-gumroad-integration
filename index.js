@@ -104,8 +104,8 @@ app.get('/success', async (req, res) => {
 
   // 4. All is good! License was successfully created for the new Gumroad customer.
   //    Next up we're going to send the user a download link to our product based
-  //    on the "platform" variant they chose (assuming a release has been created
-  //    for our product using Keygen Dist).
+  //    on the user's current platform (assuming a release has been created for
+  //    our product using Keygen Dist).
   const ua = userAgent.parse(req.headers['user-agent'])
   const { attributes: { key } } = license
   let platform
